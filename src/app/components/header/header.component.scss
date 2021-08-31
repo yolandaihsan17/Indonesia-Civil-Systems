@@ -1,0 +1,63 @@
+@import '../../../styles.scss';
+
+mat-toolbar {
+  width: 100vw;
+  height: 10vh !important;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.burger-icon, .profile{
+  background-color: transparent !important;
+  border: none;
+  color: white !important;
+}
+
+.profile {
+  border-radius: 20px;
+  padding: 8px 16px;
+  // background-color: whitesmoke ;
+  transition : background-color 225ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $darker-primary !important;
+    // opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    background-color: $darker-primary;
+    background-image: url('../../../assets/user.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+  .name {
+
+  }
+}
+
+.app-name {
+  color: white;
+  margin-left: 16px;
+  word-wrap: break-word;
+}
+
+mat-icon {
+  color: white !important;
+  background-color: none !important;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .app-name {
+    // font-size: 0.9rem;
+    display: none;
+  }
+}
+

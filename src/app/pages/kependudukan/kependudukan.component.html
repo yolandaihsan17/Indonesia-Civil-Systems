@@ -1,0 +1,176 @@
+<div fxLayout="column" fxLayoutGap="24px">
+  <mat-accordion multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Data Kependudukan
+        </mat-panel-title>
+        <mat-panel-description fxLayout="row" fxLayoutAlign="space-between center">
+          <!-- Data sesuai NIK (Nomor KTP) --> &nbsp;
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="2px">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">Nama Lengkap</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%">John Doe</div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">Tempat Tanggal Lahir</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%">Tarantang/17 Agustus 1996</div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">Jenis Kelamin</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%">Laki-laki</div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">Alamat</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="8px">
+            <div>Jalan Raya Tarantang, No.8</div>
+            <div>Tarantang</div>
+            <div>Kecamatan Harau</div>
+            <div>Kabupaten 50.Kota</div>
+            <div>Sumatera Barat</div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">Agama</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%">Islam</div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">Status Pernikahan</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%">Menikah</div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+          <div fxFlex="30%">NIK</div>
+          <div fxFlex="2%">:</div>
+          <div fxFlex="55%">1307551708960001</div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
+  <mat-accordion multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Data Pekerjaan
+        </mat-panel-title>
+        <mat-panel-description fxLayout="row" fxLayoutAlign="space-between center">
+          <!-- Data sesuai NIK (Nomor KTP) --> &nbsp;
+          <mat-icon>work</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div fxLayout="row wrap" fxLayoutAlign="space-between center" style="width: 100%;">
+        <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="16px" fxFlex="80%">
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+            <div fxFlex="30%">Pekerjaan</div>
+            <div fxFlex="2%">:</div>
+            <div fxFlex="55%">Karyawan Wiraswasta</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+            <div fxFlex="30%">Nama Perusahaan</div>
+            <div fxFlex="2%">:</div>
+            <div fxFlex="55%">PT. Bank Mandiri Persero TBK</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+            <div fxFlex="30%">ID Perusahaan</div>
+            <div fxFlex="2%">:</div>
+            <div fxFlex="55%">8729109238</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="8px" class="item">
+            <div fxFlex="30%">Alamat Perusahaan</div>
+            <div fxFlex="2%">:</div>
+            <div fxFlex="55%" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="8px">
+              <div>Jalan Sudirman, Blok A78</div>
+              <div>Palmerah</div>
+              <div>Jakarta Pusat</div>
+              <div>DKI Jakarta</div>
+            </div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="item">
+            <div fxFlex="30%">Jumlah Pegawai</div>
+            <div fxFlex="2%">:</div>
+            <div fxFlex="55%">51-200 Orang</div>
+          </div>
+        </div>
+
+        <div class="company-picture"></div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="16px">
+    <mat-card class="example-card" fxFlex routerLink="/kesehatan">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>BPJS Kesehatan</mat-card-title>
+        <mat-card-subtitle>Jaminan Kesehatan Masyarakat</mat-card-subtitle>
+        <div mat-card-avatar class="bpjs-image"></div>
+        <div style="flex: 1 1 auto;"></div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+          <div class="status">Aktif</div>
+          <div class="circle"></div>
+        </div>
+      </mat-card-header>
+      <div class="card-container">
+        <img mat-card-image src="../../../assets/Kartu BPJS.png" alt="Photo of a Shiba Inu">
+        <div class="nama">John Doe</div>
+        <div class="nomor">90237781</div>
+      </div>
+      <mat-card-content>
+        <!-- Konten Disini -->
+      </mat-card-content>
+      <!-- <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions> -->
+    </mat-card>
+
+    <mat-card class="example-card" fxFlex routerLink="/kesehatan">
+      <mat-card-header>
+        <div mat-card-avatar class="bpjstk-image"></div>
+        <mat-card-title>BPJSTK</mat-card-title>
+        <mat-card-subtitle>Jaminan Kesehatan Tenaga Kerja</mat-card-subtitle>
+        <div style="flex: 1 1 auto;"></div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+          <div class="status">Aktif</div>
+          <div class="circle"></div>
+        </div>
+      </mat-card-header>
+      <div class="card-container">
+        <img mat-card-image src="../../../assets/Kartu BPJSTK.png" alt="Kartu BPJSTK user">
+        <div class="nama">John Doe</div>
+        <div class="nomor">90237781</div>
+      </div>
+      <mat-card-content>
+        <!-- Konten Disini -->
+      </mat-card-content>
+      <!-- <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions> -->
+    </mat-card>
+
+  </div>
+  <div class="bottom-empty-space"></div>
+</div>

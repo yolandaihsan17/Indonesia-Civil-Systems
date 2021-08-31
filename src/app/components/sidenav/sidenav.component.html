@@ -1,0 +1,13 @@
+<div class="menu-container" [ngClass]="{'sidenav-mode': ColTotal != 10}">
+  <div class="menu" [ngClass]="{'selected' : menu === selectedMenu}" *ngFor="let menu of menuList" (click)="selectMenu(menu)">
+    <mat-icon >{{menu.icon}}</mat-icon>
+    <div class="text" >{{menu.displayText}}</div>
+  </div>
+
+  <div class="description-text">
+    Sistem dikembangkan untuk masyarakat Indonesia dalam mengurus berbagai keperluan sebagai warga negara Indonesia. Berhati-hatilah dalam menggunakan layanan ini, jangan lupa untuk logout setelah selesai memakainya.
+  </div>
+</div>
+
+
+<!-- <div style="width: 100%; background-color: antiquewhite;"> testing</div> -->

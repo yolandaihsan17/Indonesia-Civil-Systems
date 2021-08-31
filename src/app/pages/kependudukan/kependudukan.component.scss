@@ -1,0 +1,100 @@
+@import "../../../styles.scss";
+
+.company-picture {
+  height: 100px;
+  // width: 60px !important;
+  // background-color: transparent;
+  background-image: url("../../../assets/Mandiri_logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.example-card {
+  max-width: 400px;
+  border-radius: 20px !important;
+}
+
+.bpjs-image {
+  background-image: url("../../../assets/BPJS\ Kesehatan.png");
+  background-size: cover;
+}
+
+.bpjstk-image {
+  background-image: url("../../../assets/BPJSTK.png");
+  background-size: cover;
+}
+
+.bottom-empty-space {
+  height: 60px;
+}
+
+mat-card {
+  min-height: 342px;
+  min-width: 280px;
+  margin-top: 16px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.status {
+  color: $green;
+}
+
+.card-container {
+  margin-top: 16px;
+  img {
+    border-radius: 20px;
+  }
+
+  .nama {
+    position: absolute;
+    text-align: right;
+    right: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    bottom: 40%;
+    text-shadow: 4px 5px 12px rgba(0,0,0,0.24);
+    // text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    //   1px 2px 1px #eeeeee;
+  }
+  .nomor {
+    position: absolute;
+    text-align: right;
+    right: 40px;
+    color: white;
+    font-size: 1rem;
+    bottom: 30%;
+    text-shadow: 4px 5px 12px rgba(0,0,0,0.24);
+    // text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    //   1px 2px 1px #eeeeee;
+  }
+}
+
+mat-expansion-panel {
+  .item {
+    padding: 16px 12px;
+    border-radius: 10px;
+  }
+
+  .item:nth-child(odd) {
+    background-color: rgba(216, 253, 232, 0.247);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .company-picture {
+    display: none;
+  }
+}

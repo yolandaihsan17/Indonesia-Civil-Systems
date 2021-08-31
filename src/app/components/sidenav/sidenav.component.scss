@@ -1,0 +1,90 @@
+@import "../../../styles.scss";
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  // background-color: $primary;
+  background: linear-gradient(180deg, $primary 0%, $darker-primary 87%);
+  width: calc(100% - 16px);
+  height: 90vh;
+  padding-left: 16px;
+
+  &.sidenav-mode {
+    height: 100vh;
+    padding-top: 10vh;
+  }
+  // padding: 16px;
+}
+
+.description-text {
+  margin-top: 32px;
+  padding-right: 32px;
+  color: white;
+  text-align: justify;
+  font-size: 0.75rem;
+  // font-style: ;
+}
+
+@keyframes selecting {
+  from {
+    border-radius: 0px;
+  }
+
+  20% {
+    border-radius: 18px;
+  }
+
+  to {
+    border-radius: 30px;
+  }
+}
+
+.menu {
+  padding: 16px 16px;
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.411);
+  // background-color: $darker-primary;
+  margin-top: 16px;
+  width: calc(100% - 64px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &.selected {
+    background: $darker-primary;
+    border-bottom: none;
+    border-radius: 30px;
+    animation-name: selecting;
+    animation-duration: 0.5s;
+    // filter: hue-rotate(14deg);
+
+    .text {
+      // color: $primary;
+    }
+
+    mat-icon {
+      // color: $primary;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  mat-icon {
+    color: white;
+  }
+
+  .text {
+    display: inline;
+    color: white;
+    margin-left: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}

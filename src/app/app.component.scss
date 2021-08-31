@@ -1,0 +1,48 @@
+@import '../styles.scss';
+
+.drawer-container {
+  width: 100%;
+  height: 100vh;
+  // border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  // padding: 20px;
+  max-width: 300px;
+}
+
+.content.primary-content {
+  padding: 16px 16px 16px 32px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+h2 {
+  margin-bottom: 0px !important;
+}
+
+mat-icon {
+  &:hover {
+    cursor: pointer;
+  }
+}
+// ::ng-deep .content.empty-space > figure.mat-figure {
+//   display: block !important;
+// }
+
+
+
+@media only screen and (max-width: 1023px) {
+}

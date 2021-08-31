@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" [class.mat-elevation-z2]="true">
+  <button mat-icon-button class="burger-icon" (click)="toggleDrawer()" *ngIf="ColTotal != 10">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="app-name">Indonesia Civil System</span>
+  <span class="spacer"></span>
+  <button class="profile" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px">
+    <div class="name">John Doe</div>
+    <div class="avatar"></div>
+  </button>
+</mat-toolbar>
