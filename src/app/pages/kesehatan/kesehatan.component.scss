@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+mat-expansion-panel {
+  .item {
+    padding: 16px 12px;
+    border-radius: 10px;
+  }
+
+  .item:nth-child(odd) {
+    background-color: rgba(216, 253, 232, 0.247);
+  }
+}
+
+.bottom-empty-space {
+  height: 60px;
+}

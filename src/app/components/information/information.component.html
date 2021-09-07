@@ -1,0 +1,9 @@
+<div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="16px" class="information-container">
+  <h2>Information</h2>
+  <mat-divider></mat-divider>
+  <div class="image-container" fxLayout="column" fxLayoutAlign="end start"  (mouseover)="displayDescr=true" (mouseout)="displayDescr=false">
+    <div class="news-desc" fxLayout="column" fxLayoutAlign='start start' fxLayoutGap="8px">
+      <div class="title">Peraturan PPKM terbaru Sumatera Barat (1 September 2021)</div>
+      <div class="description" *ngIf="displayDescr">Pemerintah Provinsi Sumatera Barat baru saja mengeluarkan terbaru terkait aturan PPKM. Beberapa daerah akan terkena dampak dari peraturan ini. Cek untuk lebih detail.</div>
+    </div>
+</div>

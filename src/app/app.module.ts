@@ -23,6 +23,7 @@ import { KesehatanComponent } from './pages/kesehatan/kesehatan.component';
 import { PendidikanComponent } from './pages/pendidikan/pendidikan.component';
 import { DaruratComponent } from './pages/darurat/darurat.component';
 import { TitleComponent } from './components/title/title.component';
+import { InformationComponent } from './components/information/information.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { TitleComponent } from './components/title/title.component';
     PendidikanComponent,
     DaruratComponent,
     TitleComponent,
+    InformationComponent,
   ],
   imports: [
     BrowserAnimationsModule,

@@ -99,6 +99,16 @@ mat-icon {
   color: $accent;
 }
 
+a {
+  text-decoration: none;
+  color: $primary;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .mat-grid-tile .mat-figure {
   display: inline !important;
 }

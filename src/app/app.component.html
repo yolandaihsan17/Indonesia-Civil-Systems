@@ -21,7 +21,9 @@
           <router-outlet></router-outlet>
         </div>
       </mat-grid-tile>
-      <mat-grid-tile *ngIf="colTotal === 10" colspan="2" rowspan="9" class="content empty-space"></mat-grid-tile>
+      <mat-grid-tile *ngIf="colTotal === 10" colspan="2" rowspan="9" class="content empty-space">
+        <app-information></app-information>
+      </mat-grid-tile>
     </mat-grid-list>
   </div>
 

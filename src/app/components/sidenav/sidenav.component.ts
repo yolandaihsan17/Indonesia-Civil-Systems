@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -17,14 +17,27 @@ export class SidenavComponent implements OnInit {
     { displayText: "darurat", route: "/darurat", icon: 'local_police' }
   ]
 
-  selectedMenu: { displayText: string, route: string, icon: string } = null
+  selectedMenu: Menu = null
 
 
   constructor(
     private router: Router) { }
 
   ngOnInit(): void {
-    this.selectedMenu = this.menuList[0]
+    // this.selectedMenu = this.menuList[0]
+    this.router.events.subscribe((e: NavigationStart) => {
+      if (e.url.startsWith('/kependudukan')) {
+        this.selectedMenu = this.menuList[0]
+      } else if (e.url.startsWith('/kesehatan')) {
+        this.selectedMenu = this.menuList[1]
+      } else if (e.url.startsWith('/pajak')) {
+        this.selectedMenu = this.menuList[2]
+      } else if (e.url.startsWith('/pendidikan')) {
+        this.selectedMenu = this.menuList[3]
+      } else if (e.url.startsWith('/darurat')) {
+        this.selectedMenu = this.menuList[4]
+      }
+    })
   }
 
   selectMenu(menu: Menu) {

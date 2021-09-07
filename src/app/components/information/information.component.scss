@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+
+.information-container {
+  padding: 16px;
+  height: fit-content;
+
+  .image-container {
+    width: 100%;
+    height: 300px;
+    background-image: url("../../../assets/sumatera\ barat\ 2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    z-index: 99;
+    &:hover {
+      cursor: pointer;
+    }
+
+    .news-desc {
+      padding: 16px;
+      color: white;
+      text-shadow: 4px 5px 12px rgba(0, 0, 0, 0.918);
+      background-color: transparent;
+      border-radius: 20px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 3%,
+        rgba(0, 0, 0, 0.5634628851540616) 37%
+      );
+
+      .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
